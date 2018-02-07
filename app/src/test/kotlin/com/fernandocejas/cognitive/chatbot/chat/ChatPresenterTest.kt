@@ -16,18 +16,13 @@ class ChatPresenterTest : UnitTest() {
     private lateinit var chatPresenter: ChatPresenter
 
     @Mock private lateinit var chatView: ChatView
-    @Mock private lateinit var startConversation: StartConversation
-    @Mock private lateinit var sendMessage: SendMessage
 
     @Before fun setUp() {
-        chatPresenter = ChatPresenter(startConversation, sendMessage)
+        chatPresenter = ChatPresenter()
         chatPresenter.chatView = chatView
     }
 
     @Test fun `should execute StartConversation use case and render response message`() {
-        chatPresenter.startConversation()
-
-        verify(startConversation).execute(any(), any())
     }
 
     @Test fun `should render sent message`() {
@@ -38,13 +33,5 @@ class ChatPresenterTest : UnitTest() {
     }
 
     @Test fun `should execute SendMessage use case and render response message`() {
-        val message = MessageViewModel("Test", DateTime.now(), SENT)
-        chatPresenter.sendMessage(message)
-
-        val params = SendMessage.Params(Message(message.message, message.createdAt))
-
-        verify(sendMessage).execute(any(), eq(params))
-        verify(chatView).renderMessage(message)
-        verify(chatView).renderMessage(any())
     }
 }

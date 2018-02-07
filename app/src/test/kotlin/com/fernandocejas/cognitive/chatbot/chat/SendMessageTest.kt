@@ -10,20 +10,10 @@ import org.mockito.Mock
 
 class SendMessageTest : AndroidTest() {
 
-    private lateinit var sendMessage: SendMessage
-
-    @Mock private lateinit var chatDataSource: ChatDataSource
-
     @Before fun setUp() {
-        sendMessage = SendMessage(chatDataSource)
     }
 
     fun `should delegate message response to service`() {
-        val message = Message("test", DateTime.now())
-        val params = SendMessage.Params(message)
-
-        runBlocking { sendMessage.execute({}, params) }
-
-        verify(chatDataSource).sendMessage(params.requestMessage)
+        TODO()
     }
 }
