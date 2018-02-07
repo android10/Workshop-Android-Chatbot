@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="separator">#DFDFDF</color>
+  <color name="sendMessageLayoutBackground">#FFFFFF</color>
+  <color name="sendMessageEditTextBackground">@android:color/transparent</color>
+
+  <color name="itemMessageSent">#999AAA</color>
+  <color name="itemMessageReceived">#303AAA</color>
+  <color name="textMessage">#FFFFFF</color>
+</resources>
