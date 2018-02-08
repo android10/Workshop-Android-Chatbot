@@ -1,6 +1,9 @@
 # Workshop Android Chatbot
 Code scaffolding in order to build a Pizza Delivery Chatbot.  
 
+## Full working solution here:
+https://github.com/android10/Android-Cognitive-Samples/tree/master/chatbot/android
+
 ## Slides here:
 ![https://speakerdeck.com/android10/bringing-cognitive-capabilities-to-android](https://user-images.githubusercontent.com/1360604/35930788-2e0013d6-0c33-11e8-8d11-d828c6539546.png)
 
